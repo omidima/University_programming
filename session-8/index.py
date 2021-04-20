@@ -17,16 +17,13 @@ n= input("input: ")
 
 # In[2]:
 
-
-arr=[]
 temp = ""
 for i in n:
-    if i != " ":
+    if "a" <= i <= "z" or "A" <= i <= "Z":
         temp += i
-    else:
-        arr.append(temp)
-        temp = ""        
-
+    elif temp != "":
+            print(temp, end=" , ")
+            temp = ""
 
 # In[3]:
 
