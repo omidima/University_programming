@@ -9,34 +9,17 @@
 # 
 # ---
 
-# In[3]:
-
-
 def fac_n(n):
     if n == 1: return 1
     else : return n*fac_n(n-1)
-fac_n(3)
-
-
-# In[4]:
-
 
 def t_n(n):
     if n == 1 :return n**2
     else: return (n**2)*(t_n(n-1))
-t_n(3)
-
-
-# In[5]:
-
 
 def s_n(n):
     if n == 1: return 1
     else: return n+(s_n(n-1))
-s_n(3)
-
-
-# In[7]:
 
 
 n = int(input("input n: "))
@@ -44,20 +27,12 @@ x = int(input("input x: "))
 while n>=x:
     print("x should more than n")
     x = int(input("input x: "))
-
-
-# In[79]:
-
-
+    
 # g(x)
 result = 0
 for i in range(1,n+1):
     result += (s_n(i)+t_n(i)) / ((i*x) - fac_n(i))
 result
-
-
-# In[80]:
-
 
 #f(x)
 result = x
@@ -70,9 +45,6 @@ result
 #  .برنامه ی بنویسید که اعداد کامل چهار رقمی را محاسبه و چاپ نماید. 
 #  
 #  ---
-
-# In[4]:
-
 
 temp = 2
 while True:
@@ -93,16 +65,10 @@ while True:
 # 
 # ---
 
-# In[10]:
-
-
 def isEven(n):
     if n%2 == 0:
         return True
     return False
-
-
-# In[11]:
 
 
 def isMain(n):
@@ -110,9 +76,6 @@ def isMain(n):
         if n%i == 0:
             return False
     return True
-
-
-# In[21]:
 
 
 a = 0
@@ -145,8 +108,6 @@ print("Even: {} , notEven: {} , Main: {}".format(even,notEven,main))
 # 
 # ---
 
-# In[23]:
-
 
 sum = 0
 for i in range(1,11):
@@ -162,9 +123,6 @@ sum
 # چه تعداد خوب گرفته اند.(
 # 
 # ---
-
-# In[69]:
-
 
 def spel(data = " ",n = 1000):
     arr = []
@@ -216,8 +174,6 @@ for i in range(k):
 # 
 # ---
 
-# In[74]:
-
 
 def isMain(n):
     for i in range(2,n):
@@ -232,9 +188,6 @@ def isMain(n):
 for i in range(100,1000):
     if i//100 == i%10 and isMain(i):
         print(i,end=" , ")
-
-
-# In[ ]:
 
 
 
