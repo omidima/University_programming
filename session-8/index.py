@@ -25,9 +25,6 @@ for i in n:
             print(temp, end=" , ")
             temp = ""
 
-# In[3]:
-
-
 arr
 
 
@@ -148,10 +145,3 @@ for i in range(1,(len(arr)//3)+1):
     print()   
 
 
-# In[ ]:
-
-
-
-
-
-# 
